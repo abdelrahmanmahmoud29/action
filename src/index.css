@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap');
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
+body {
+  margin: 0;
+background-color: rgb(15, 15, 52);
+font-family: 'Bruno Ace SC', cursive;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/* ///////////////////////////////////////////////////////////////// */
+.nav{
+  font-family: 'Bruno Ace SC', cursive;
+  box-shadow: 5px 5px 10px black;
+}
+.nav a{
+  text-decoration: none;
+  color: white;
+}
+.end{
+  width: 50%;
+  justify-content: flex-end;
+}
+.navHead{
+  color:dodgerblue;
+}
+/* ///////////////////////////////////////////////////////////// */
+.sub-btn{
+  border: white solid 1px;
+  color: white;
+}
+.sub-btn:hover{
+  background-color: dodgerblue ;
+}
+.trending-Movies p{
+font-size: 13px;
+font-weight: bolder;
+}
+.trending-Movies-h2{
+  position: relative;
+}
+.trending-Movies{
+  margin: 40px;
+}
+a{
+  text-decoration: none;
+  color: white !important;
+}
+.movieTitle{
+ overflow: hidden;
+ margin-top: 3px;
+ width: 120px;
+ height: 50px;
+  
+}
+.sliderTitel{
+  overflow: hidden;
+  margin-top: 3px;
+  width: 110px;
+  height: 50px;
+}
+.cast{
+  overflow: auto;
+  height: 220px;
+  width: 250px;
+}
+.search{
+  background-color:rgb(15, 15, 52);
+}
+.searchContainer{
+  position: relative;
+}
+.search-box{
+  width: 600px;
+  margin-top: 15px;
+  height: 200px;
+  overflow: auto;
+}
+.search-box::-webkit-scrollbar{
+  width: 10px;
+  background-color: rgb(15, 15, 52);
+}
+
+.search-btn{
+  padding: 5px 25px;
+  border-radius: 25px;
+  border: none;
+position: absolute;
+top: 5%;
+left: 63.9%;
+}
+.cast::-webkit-scrollbar{
+  width: 10px;
+  background-color: rgb(15, 15, 52);
+}
+.lang{
+  height: 28px;
+  overflow: hidden;
+}
+.continuobtn{
+  position: absolute;
+  left: 84.3%;
+  border-radius: 20px;
+  padding: 5px 10px;
+  border: 1px white solid;
+  display: flex;
+  background-color: transparent;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: all 0.6s ;
+}
+.continuobtn::before
+{
+content: '';
+width: 100%;
+height: 0%;
+transform: translate(0%,-5%) rotate(45deg);
+position: absolute;
+background-color: white;
+z-index: -1;
+transition: all 1s ease;
+}
+.continuobtn:hover::before{
+  height: 380%;
+}
+.continuobtn:hover{
+  color: black;
+}
+
+
+
+.trending-Movies-h2::before{
+  position: absolute;
+  content: '';
+  width: 70px;
+  height: 1px;
+  background-color: #ffffff;
+  top: -20px;
+  left: 0;
+ 
+}
+.trending-Movies-h2::after{
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 1px;
+  background-color: #ffffff;
+  top: 135%;
+  left: 0;
+ 
+}
+.MovieDetailsTitle{
+  border-bottom: white solid .5px ;
+  
+}
+.MovieDetailsDetails{
+  border-bottom: white solid .5px ;
+
+}
+.MovieDetailsDetails ul{
+  list-style:none;
+}
+
+.footer-icn{
+  width: 50px;
+  height: 50px;
+  background-color: black;
+  margin: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 1px solid white;
+  background-color: transparent;
+  color: white;
+  transition: all .6s;
+}
+.footer-ul{
+  border-bottom: solid white 1px;
+}
+footer{
+  margin-top: 90px;
+  border-top: 1px solid white;
+}
+.footer-icn:hover{
+ transform: scale(1.1);
+ 
+
+}
+.sec-card{
+  transition: all .5s;
+}
+.sec-card:hover{
+  transform: translateY(-10px) ;
+}
+nav a.active{
+  color:dodgerblue !important;
+}
+.dropdown{
+  display: none !important;
+  
+}
+@media screen and (max-width: 600px){
+  body{
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .nav{
+    width: 100%;
+  }
+  .navHead img{
+width: 30px;
+  }
+  .nav-ul{
+    display: none !important;
+  }
+  .dropdown i{
+color:dodgerblue ;
+  }
+  .dropdown{
+   display: flex !important;
+  }
+.dropdown-item{
+  color: black !important;
+}
+ nav{
+  display: flex;
+  justify-content: space-between;
+ }
+  /*////////////////////////////////////////////////  */
+.continuobtn{
+  left: 60%;
+}
+.trending{
+  margin: auto !important;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+/* /////////////////////////////////////////////// */
+.search-btn{
+  left: 55%;
+  padding: 5px 5px;
+}
+
+
+}
