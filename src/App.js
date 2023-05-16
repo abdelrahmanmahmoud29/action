@@ -1,5 +1,10 @@
 import './App.css';
-import {createBrowserRouter, RouterProvider}from 'react-router-dom'
+import {
+  createHashRouter,
+  RouterProvider,
+} from "react-router-dom";
+// import Root, { rootLoader } from "./routes/root";
+// import Team, { teamLoader } from "./routes/team";
 import Home from '../src/components/Home/Home'
 import Login from '../src/components/Login/Login'
 import Layout from './components/Layout/Layout';
@@ -16,7 +21,7 @@ function App() {
 
 
 
-  let routers= createBrowserRouter([{path:'',element:<Layout/>,children:[
+  let routers= createHashRouter([{path:'',element:<Layout/>,children:[
       {index:true,element:<Home/>},
       {path:'login',element:<Login/>},
       {path:'register',element:<Regestration/>},
@@ -32,9 +37,7 @@ function App() {
  
   
   return <>
-  <RouterProvider router={routers}></RouterProvider>
-  
-
+  <RouterProvider router={routers} />
   </>
     
  
