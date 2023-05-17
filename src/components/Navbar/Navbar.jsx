@@ -28,11 +28,11 @@ function Navbar() {
     <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
     <li><a href="#"><i class="fa-brands fa-imdb"></i></a></li>
 </ul>
-<ul className=' d-flex  m-2 w-25 justify-content-around  align-items-center list-unstyled'>
-  {localStorage==null?<><a><NavLink to='Login'>Login</NavLink></a>
-    <a><NavLink to='register'>Register</NavLink></a></>:
-     <a onClick={logout}><NavLink to='register'>Logout</NavLink></a>
-    }
+<ul className=' m-2 w-25  align-items-center list-unstyled'>
+ <a className=' d-block'><NavLink to='Login'>Login</NavLink></a>
+    <a className=' d-block'><NavLink to='register'>Register</NavLink></a>
+     <a onClick={logout}  className=' d-block'><NavLink to='login'>Logout</NavLink></a>
+    
 
 </ul>
   </div>
@@ -47,9 +47,10 @@ function Navbar() {
         <a className="dropdown-item "><Link className=' text-black' to={'people'}>People</Link></a>
         <hr />
         <ul className=' d-flex  m-2 w-25 justify-content-around  align-items-center list-unstyled'>
-  {localStorage==null?<><a><Link className=' text-black' to='Login'>Login</Link></a>
-    <a><Link className=' text-black' to='register'>Register</Link></a></>:<a className="dropdown-item " onClick={logout}><Link className=' text-black' to='register'>Logout</Link></a>
-    }
+  <a><Link className=' text-black' to='Login'>Login</Link></a>
+    <a><Link className=' text-black' to='register'>Register</Link></a>
+    <a className="dropdown-item " onClick={logout}><Link className=' text-black' to='register'>Logout</Link></a>
+    
 
 </ul>
           </ul>

@@ -17,8 +17,10 @@ import {useNavigate} from 'react-router-dom'
  if(data.message === 'success'){
   localStorage.setItem('userToken', data.token)
  saveUserData();
+ navigate('/')
+ console.log("hi");
  setisloading(false);
-  navigate('/')
+ 
  }
   }
   let validationSchema=yup.object({
